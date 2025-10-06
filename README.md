@@ -1,4 +1,14 @@
-# Mantine
+# Mapka mantine theme
+
+This repository is fork of [mantine](https://github.com/mantinedev/mantine) with the following changes:
+
+- custom theme
+- custom fonts
+- custom colors
+
+For mapka project
+
+## Mantine
 
 [![NPM](https://img.shields.io/npm/l/@mantine/core)](https://github.com/mantinedev/mantine/blob/master/LICENSE)
 [![Backers](https://opencollective.com/mantinedev/backers/badge.svg)](https://opencollective.com/mantinedev)
