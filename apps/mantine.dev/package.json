@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "cd .. next build",
+    "build": "next build",
     "clean": "rm -rf .next",
     "dev": "next dev -p 7545",
     "postbuild": "next-sitemap",
