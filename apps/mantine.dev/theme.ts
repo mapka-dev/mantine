@@ -4,6 +4,18 @@ export const theme = createTheme({
   fontFamilyMonospace: `Menlo, Monaco, ${DEFAULT_THEME.fontFamilyMonospace}`,
   colors: {
     virtual: virtualColor({ name: 'virtual', dark: 'pink', light: 'cyan' }),
+    'blue': [
+      "#fff4e1",
+      "#ffe8cc",
+      "#fed09b",
+      "#fdb766",
+      "#fca13a",
+      "#fc931d",
+      "#fc8a08",
+      "#e17800",
+      "#c86a00",
+      "#af5a00",
+    ],
     'ocean-blue': [
       '#7AD1DD',
       '#5FCCDB',

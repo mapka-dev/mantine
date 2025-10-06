@@ -15,7 +15,6 @@
     "apps/*"
   ],
   "scripts": {
-    "all": "yarn build all",
     "hc": "cd apps/help.mantine.dev && npm run dev",
     "hc:build": "cd apps/help.mantine.dev && npm run build",
     "hc:exports": "tsx scripts/docs/hc-exports",
@@ -40,6 +39,7 @@
     "docs:count": "tsx scripts/docs/count",
     "clean": "rimraf --glob packages/*/*/{esm,cjs,lib,dist} packages/*/*/*.tsbuildinfo packages/*/*/styles.css packages/*/*/styles.layer.css packages/@mantine/core/styles",
     "build": "tsx scripts/build",
+    "build:all": "tsx scripts/build all",
     "publish:package": "tsx scripts/publish",
     "publish:package:alpha": "tsx scripts/publish --stage alpha --tag next",
     "publish:package:beta": "tsx scripts/publish --stage beta --tag next",
