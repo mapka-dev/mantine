@@ -1,8 +1,10 @@
 import createMdx from '@next/mdx';
+import { resolve } from 'path';
 import rehypeSlug from 'rehype-slug';
 
 const withMDX = createMdx({
   extension: /\.mdx?$/,
+
   options: {
     providerImportSource: '@mdx-js/react',
     rehypePlugins: [rehypeSlug],
@@ -14,6 +16,7 @@ const nextConfig = {
   pageExtensions: ['tsx', 'mdx'],
   reactStrictMode: true,
   trailingSlash: true,
+  outputFileTracingRoot: resolve(import.meta.dirname, "../../"),
   output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
