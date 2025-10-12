@@ -74,7 +74,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         />
 
         <style>
-          @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
         </style>
       </Head>
       <GaScript />
