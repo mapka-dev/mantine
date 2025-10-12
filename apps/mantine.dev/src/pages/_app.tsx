@@ -72,6 +72,10 @@ export default function App({ Component, pageProps, router }: AppProps) {
           name="og:image"
           content="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/social-preview.png"
         />
+
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+        </style>
       </Head>
       <GaScript />
       <DirectionProvider initialDirection="ltr" detectDirection={false}>

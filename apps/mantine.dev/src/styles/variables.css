@@ -1,5 +1,6 @@
+
 body {
-  --docs-font-primary: 'Outfit', sans-serif;
+  --docs-font-primary: 'Geist', sans-serif;
   --docs-font-size: 15px;
   --docs-inline-spacing: 50px;
   --docs-header-height: 100px;
@@ -17,4 +18,8 @@ body {
   @mixin smaller-than $docs-toc-breakpoint {
     --docs-table-of-contents-width: 0px;
   }
+}
+
+.font-mono {
+  font-family: var(--mantine-font-family-monospace);
 }
