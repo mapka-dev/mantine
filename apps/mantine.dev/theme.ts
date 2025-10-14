@@ -4,124 +4,28 @@ import { Button, createTheme, MantineThemeOverride, virtualColor } from '@mantin
 
 const themeOverrides: MantineThemeOverride = {
   fontFamilyMonospace: "Geist Mono",
+  primaryColor: 'yellow',
   fontFamily: "Geist, sans-serif",
-  fontSizes: {
-    xxs: '0.625rem',  // 10px
-    xs: '0.75rem',    // 12px
-    sm: '0.875rem',   // 14px
-    md: '1rem',       // 16px
-    lg: '1.125rem',   // 18px
-    xl: '1.25rem',    // 20px
-  },
-  lineHeights: {
-    xxs: '1.25',      // 12.5px ÷ 10px = 1.25
-    xs: '1.333',      // 16px ÷ 12px = 1.333
-    sm: '1.429',      // 20px ÷ 14px = 1.429
-    md: '1.5',        // 24px ÷ 16px = 1.5
-    lg: '1.556',      // 28px ÷ 18px = 1.556
-    xl: '1.6',        // 32px ÷ 20px = 1.6
-  },
-  headings: {
-    // Set Geist as the heading font family
-    fontFamily: 'Geist, sans-serif',
-
-    // Configure individual heading sizes
-    sizes: {
-      h1: {
-        fontSize: '4.291rem',    // 68.66px
-        fontWeight: '700',
-        lineHeight: '1.2',       // Calculate based on your needs
-      },
-      h2: {
-        fontSize: '3.433rem',    // 54.93px
-        fontWeight: '600',
-        lineHeight: '1.25',
-      },
-      h3: {
-        fontSize: '2.747rem',    // 43.95px
-        fontWeight: '600',
-        lineHeight: '1.3',
-      },
-      h4: {
-        fontSize: '2.198rem',    // 35.16px
-        fontWeight: '600',
-        lineHeight: '1.35',
-      },
-      h5: {
-        fontSize: '1.758rem',    // 28.13px
-        fontWeight: '600',
-        lineHeight: '1.4',
-      },
-      h6: {
-        fontSize: '1.406rem',    // 22.5px
-        fontWeight: '600',
-        lineHeight: '1.45',
-      },
-    },
+  colors: {
+    yellow: [
+      '#fff9db',
+      '#fff3bf',
+      '#ffec99',
+      '#ffe066',
+      '#ffd43b',
+      '#fcc419',
+      '#fab005',
+      '#f59f00',
+      '#f08c00',
+      '#e67700',
+    ],
   },
   components: {
-    // Button-specific font sizes
-    // buttonFontSizes: {
-    //   xs: '0.71875rem',  // 11.5px
-    //   sm: '0.9rem',      // 14.4px
-    //   md: '1rem',        // 16px
-    //   lg: '1.125rem',    // 18px
-    //   xl: '1.25rem',     // 20px
-    // }
-    // Button Line Heights (calculated as ratios)
-    // buttonLineHeights: {
-    //   xs: '1.391',       // 16px ÷ 11.5px = 1.391
-    //   sm: '1.389',       // 20px ÷ 14.4px = 1.389
-    //   md: '1.5',         // 24px ÷ 16px = 1.5
-    //   lg: '1.556',       // 28px ÷ 18px = 1.556
-    //   xl: '1.6',         // 32px ÷ 20px = 1.6
-    // }
     Button: Button.extend({
       classNames: {
         root: "font-mono"
       },
-      vars: (_, props) => {
-        if (props.size === 'xs') {
-          return {
-            root: {
-              '--button-line-height': '1.391',
-              '--button-fz': '0.71875rem',
-            },
-          };
-        }
-        if (props.size === 'sm') {
-          return {
-            root: {
-              '--button-line-height': '1.389',
-              '--button-fz': '0.9rem',
-            },
-          };
-        }
-        if (props.size === 'md') {
-          return {
-            root: {
-              '--button-line-height': '1.5',
-              '--button-fz': '1rem',
-            },
-          };
-        }
-        if (props.size === 'lg') {
-          return {
-            root: {
-              '--button-line-height': '1.556',
-              '--button-fz': '1.125rem',
-            },
-          };
-        }
-
-        if (props.size === 'lg') {
-          return {
-            root: {
-              '--button-line-height': '1.6',
-              '--button-fz': '1.25rem',
-            },
-          };
-        }
+      vars: (_, __) => {
         return { root: {} };
       }
     }),
@@ -132,6 +36,7 @@ const themeOverrides: MantineThemeOverride = {
 export const theme = createTheme({
   ...themeOverrides,
   colors: {
+    ...themeOverrides.colors,
     virtual: virtualColor({ name: 'virtual', dark: 'pink', light: 'cyan' }),
     'ocean-blue': [
       '#7AD1DD',
