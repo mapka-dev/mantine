@@ -19,7 +19,3 @@ body {
     --docs-table-of-contents-width: 0px;
   }
 }
-
-.font-mono {
-  font-family: var(--mantine-font-family-monospace);
-}

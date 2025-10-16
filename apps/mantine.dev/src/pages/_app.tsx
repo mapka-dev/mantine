@@ -12,7 +12,7 @@ import '@mantinex/demo/styles.css';
 import '@mantinex/mantine-logo/styles.css';
 import '@mantinex/mantine-header/styles.css';
 import '@docs/demos/styles.css';
-import './theme.css';
+import '../mapkaTheme.css';
 
 import { AppProps } from 'next/app';
 import Head from 'next/head';
